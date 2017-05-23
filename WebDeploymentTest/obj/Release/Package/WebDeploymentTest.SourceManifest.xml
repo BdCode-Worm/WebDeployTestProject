@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="D:\WebDeploymentTest\WebDeploymentTest\obj\Release\Package\PackageTmp" />
-  <setAcl path="D:\WebDeploymentTest\WebDeploymentTest\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="D:\WebDeploymentTest\WebDeploymentTest\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="D:\New folder (2)\WebDeployTestProject\WebDeploymentTest\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\New folder (2)\WebDeployTestProject\WebDeploymentTest\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\New folder (2)\WebDeployTestProject\WebDeploymentTest\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>
