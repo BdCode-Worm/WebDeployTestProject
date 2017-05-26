@@ -38,6 +38,7 @@
     <IncludeIisSettings>false</IncludeIisSettings>
     <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
     <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PublishDatabaseSettings>&lt;Objects xmlns="http://schemas.microsoft.com/developer/msbuild/2003"&gt;&lt;ObjectGroup Name="StudentDBEntities-Deployment" Order="1"&gt;&lt;Destination Path="data source=ACMIPROCESSDEV1%3binitial catalog=StudentDB%3buser id=sa%3bpassword=CMI%402016%3bMultipleActiveResultSets=True%3bApp=EntityFramework&amp;amp%3bquot%3b" /&gt;&lt;Object Type="DbFullSql"&gt;&lt;PreSource Path="Data Source=RIZWAN\SQLEXPRESS%3bInitial Catalog=StudentDB%3bUser ID=sa%3bPassword=123%3bMultipleActiveResultSets=True%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" /&gt;&lt;Source Path="obj\Debug\AutoScripts\StudentDBEntities-Deployment_SchemaAndData.sql" Transacted="True" /&gt;&lt;/Object&gt;&lt;/ObjectGroup&gt;&lt;/Objects&gt;</PublishDatabaseSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -46,17 +47,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PublishDatabaseSettings>
-      <Objects>
-        <ObjectGroup Name="StudentDBEntities-Deployment" Order="1">
-          <Destination Path="Data Source=RIZWAN\SQLEXPRESS%3bInitial Catalog=StudentDB%3bUser ID=sa%3bPassword=123%3bApplication Name=EntityFramework" />
-          <Object Type="DbFullSql">
-            <PreSource Path="Data Source=RIZWAN\SQLEXPRESS%3bInitial Catalog=StudentDB%3bUser ID=sa%3bPassword=123%3bMultipleActiveResultSets=True%3bApplication Name=EntityFramework" ScriptSchema="False" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" />
-            <Source Path="obj\Release\AutoScripts\StudentDBEntities-Deployment_DataOnly.sql" Transacted="True" />
-          </Object>
-        </ObjectGroup>
-      </Objects>
-    </PublishDatabaseSettings>
+    <PublishDatabaseSettings>&lt;Objects xmlns="http://schemas.microsoft.com/developer/msbuild/2003"&gt;&lt;ObjectGroup Name="StudentDBEntities-Deployment" Order="1"&gt;&lt;Destination Path="data source=ACMIPROCESSDEV1%3binitial catalog=StudentDB%3buser id=sa%3bpassword=CMI%402016%3bMultipleActiveResultSets=True%3bApp=EntityFramework&amp;amp%3bquot%3b" /&gt;&lt;Object Type="DbFullSql"&gt;&lt;PreSource Path="Data Source=RIZWAN\SQLEXPRESS%3bInitial Catalog=StudentDB%3bUser ID=sa%3bPassword=123%3bMultipleActiveResultSets=True%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" /&gt;&lt;Source Path="obj\Release\AutoScripts\StudentDBEntities-Deployment_SchemaAndData.sql" Transacted="True" /&gt;&lt;/Object&gt;&lt;/ObjectGroup&gt;&lt;/Objects&gt;</PublishDatabaseSettings>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
